@@ -29,11 +29,10 @@ class SetHotkeys {
   }
 
   start(ignoreTyping = false) {
-    const isTyping = ignoreTyping ? false : this.isTyping();
-
     window.addEventListener(
       'keydown',
       event => {
+        const isTyping = ignoreTyping ? false : this.isTyping();
         const key = this.keyFromKeyboardEvent(event);
         if (!this.buffer.includes(key)) {
           this.buffer.push(key);
