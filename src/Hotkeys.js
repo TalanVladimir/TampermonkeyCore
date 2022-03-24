@@ -33,6 +33,7 @@ class SetHotkeys {
       'keydown',
       event => {
         const isTyping = ignoreTyping ? false : this.isTyping();
+        log(`isTyping: ${isTyping}`);
         const key = this.keyFromKeyboardEvent(event);
         if (!this.buffer.includes(key)) {
           this.buffer.push(key);
