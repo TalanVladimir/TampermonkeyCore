@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         _Test
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @updateURL    https://raw.githubusercontent.com/TalanVladimir/TampermonkeyCore/master/src/UserScript.js
@@ -23,6 +23,8 @@
   console.log('TEST UPDATE OF THIS SCRIPT 0.1');
   console.log('TEST UPDATE OF THIS SCRIPT 0.1');
   console.log('TEST UPDATE OF THIS SCRIPT 0.1');
+
+  alert('yes');
 
   // Your code here...
 })();
